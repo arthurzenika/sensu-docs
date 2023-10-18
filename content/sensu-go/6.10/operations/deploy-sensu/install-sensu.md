@@ -168,6 +168,7 @@ volumes:
 
 {{< code shell "Debian family" >}}
 # Copy the config template from the docs
+sudo mkdir /etc/sensu/
 sudo curl -L https://docs.sensu.io/sensu-go/latest/files/backend.yml -o /etc/sensu/backend.yml
 
 # Start sensu-backend using a service manager
